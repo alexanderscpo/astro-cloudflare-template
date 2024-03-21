@@ -1,0 +1,14 @@
+name = "astro-template"
+node_compat = true
+
+[[d1_databases]]
+binding = "DB" # available in your Worker on env.DB
+database_name = "prueba"
+database_id = "28003e8e-e277-4c0a-9914-52bf60e117aa"
+
+[env.preview]
+name="preview"
+[[env.preview.d1_databases]]
+binding="DB"
+database_name="prueba-preview"
+database_id="28f2455c-ab09-4df1-b1c6-1a10ef3c3532"
